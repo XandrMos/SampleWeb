@@ -1,0 +1,411 @@
+/* Цей файл створений з навчальною метою.
+ Подумайте як можна оптимізувати та удосконалити стилізацію.
+ Що треба зробити щоб вносити зміни можна було максимально зручно.*/
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Questrial', sans-serif;
+}
+body {
+  padding: 25px;
+}
+header {
+  height: 1665px;
+}
+.header-hero {
+  margin: auto;
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-hero > h1 {
+  font-size: 24px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+}
+.header-hero > ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  font-size: 15px;
+  margin-left: -90px;
+}
+.header-hero > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+.header-main-banner {
+  margin: 25px auto 0px auto;
+  width: 100%;
+  height: 920px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url('../img/main-banner-bg.png'), rgba(10, 13, 23, 1);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-size: 14px;
+  padding-top: 200px;
+}
+.header-main-banner > h2 {
+  display: none;
+}
+.header-main-banner > p {
+  margin-top: 40px;
+}
+.main-banner-accent {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+.header-categories {
+  display: grid;
+  max-width: 1110px;
+  height: 790px;
+  margin: 0px auto;
+  grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+  grid-template-rows: repeat(11, 1fr);
+  column-gap: 25px;
+  row-gap: 25px;
+  color: #161c2d;
+  position: relative;
+  top: -150px;
+}
+.header-categories > h2 {
+  display: none;
+}
+.header-categories > a {
+  display: block;
+  background-color: #f4f7fa;
+  border-radius: 10px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #161c2d;
+  cursor: pointer;
+}
+.header-categories > a:nth-child(2) {
+  grid-row-start: 1;
+  grid-row-end: 7;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.header-categories > a:nth-child(3) {
+  grid-row-start: 1;
+  grid-row-end: 6;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.header-categories > a:nth-child(4) {
+  grid-row-start: 1;
+  grid-row-end: 7;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+.header-categories > a:nth-child(5) {
+  grid-row-start: 7;
+  grid-row-end: 12;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.header-categories > a:nth-child(6) {
+  grid-row-start: 6;
+  grid-row-end: 12;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.header-categories > a:nth-child(7) {
+  grid-row-start: 7;
+  grid-row-end: 12;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+.header-categories > a > img {
+  align-self: center;
+}
+.category-wrapper > h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.category-wrapper > p {
+  font-size: 18px;
+  margin-top: 12px;
+}
+.all-products > h2 {
+  text-align: center;
+  color: #161c2d;
+  font-size: 32px;
+}
+.all-products-wrapper {
+  max-width: 1110px;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.products-card {
+  margin-top: 25px;
+  width: 255px;
+  height: 435px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.img-card-group {
+  height: 300px;
+  background-color: #f4f7fa;
+  border-radius: 10px;
+  position: relative;
+}
+.img-card-group > img {
+  display: block;
+  margin: 60px auto 0px auto;
+}
+.img-card-group > button {
+  display: block;
+  background: #473bf0;
+  color: white;
+  border: 0px;
+  width: 165px;
+  height: 45px;
+  font-size: 18px;
+  border-radius: 8px;
+  font-weight: 500;
+  margin: 0px auto;
+  position: absolute;
+  top: 70%;
+  left: 45px;
+}
+.img-card-group > button:hover {
+  cursor: pointer;
+}
+.text-card-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  font-size: 16px;
+  color: #68d585;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.text-card-group > h3 {
+  color: #161c2d;
+  font-size: 22px;
+}
+.card-stars {
+  color: rgb(240, 184, 31);
+}
+
+.text-card-group .previous-price {
+  text-decoration: line-through;
+  font-weight: 300;
+  color: #161c2d;
+}
+.all-products > a {
+  display: block;
+  width: 200px;
+  height: 100px;
+  font-size: 18px;
+  color: #161c2d;
+  text-align: center;
+  text-decoration: none;
+  margin: 40px auto;
+}
+.content {
+  width: 100%;
+  height: 770px;
+  background-color: #473bf0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.content > h2 {
+  display: none;
+}
+.content > div:nth-child(2) {
+  position: relative;
+}
+.foto {
+  width: 400px;
+  height: 480px;
+  background: url(../img/jean-philippe-delberghe-Ba2mCCtXG2o-unsplash.png);
+  border-radius: 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.foto-chair {
+  width: 200px;
+  height: 200px;
+  background: url(../img/content-chair.png), white;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  transform: rotate(-7deg);
+  position: absolute;
+  top: 135px;
+  left: 285px;
+}
+.content-text-group {
+  margin-left: 200px;
+  width: 410px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.content-text-group > h3 {
+  font-size: 36px;
+  line-height: 48px;
+}
+.content-text-group > p {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 100;
+}
+.content-text-group > a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+.testimonial {
+  width: 100%;
+  height: 770px;
+  background-color: #161c2d;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+.testimonial > h2 {
+  display: none;
+}
+.testimonial .testimonial-text-group {
+  width: 540px;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.testimonial-text-group p:first-child {
+  color: #68d585;
+  font-size: 48px;
+}
+.testimonial-text-group p:nth-child(2) {
+  color: rgb(240, 184, 31);
+  font-size: 28px;
+}
+.testimonial > img {
+  display: block;
+  border-radius: 8px;
+  margin-left: 100px;
+  filter: drop-shadow(-30px 30px 0px #202636);
+}
+.cta {
+  width: 100%;
+  height: 790px;
+  background: url('../img/cta-bg.png'), rgba(22, 28, 48, 1);
+  background-position: center;
+  background-size: cover;
+  margin-top: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  font-weight: 400;
+}
+.cta > h2 {
+  display: none;
+}
+.cta > a {
+  display: block;
+  width: 200px;
+  height: 60px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  background-color: #68d585;
+  line-height: 60px;
+  color: #161c2d;
+  margin-top: 40px;
+}
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+  color: #161c2d;
+  margin-top: 80px;
+}
+.footer-menu > h2 {
+  display: none;
+}
+.footer-menu > div {
+  margin-right: 100px;
+}
+.footer-menu > div > h3 {
+  font-size: 15px;
+  font-weight: 100;
+  margin-bottom: 25px;
+}
+.footer-menu > div > ul {
+  list-style: none;
+}
+.footer-menu a {
+  text-decoration: none;
+  color: #161c2d;
+  line-height: 40px;
+}
+.footer-menu a:hover {
+  cursor: pointer;
+}
+.footer-menu a[href='mailto:#'],
+.footer-menu a[href='tel:+#'] {
+  color: #473bf0;
+}
+.footer-social-media {
+  max-width: 1110px;
+  margin: 80px auto 0px auto;
+  border-top: solid 1px #161c2d;
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-social-media > h2 {
+  display: none;
+}
+.footer-social-media > div {
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-social-media a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #161c2d;
+}
+.footer-social-media a:hover {
+  color: #473bf0;
+}
